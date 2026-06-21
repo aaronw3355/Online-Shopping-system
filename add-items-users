@@ -1,1 +1,69 @@
+#include <iostream>
+#include "Product.h"
+#include "Inventory.h"
+#include "User.h"
 
+using namespace std;
+
+int main()
+{
+    // Create invetory
+    Invetory inventory;
+
+    // Add products to catalog
+    inventory.addProduct(
+        Product(
+            1,
+            "Laptop",
+            "Gaming Laptop",
+            1199.99,
+            10
+        )
+    );
+
+    inventory.addProduct(
+        Product(
+            2,
+            "External 4k Monitor",
+            "Monitor",
+            499.99,
+            40
+        )
+    );
+
+    inventory.addProduct(
+            Product(
+            3,
+            "Headphones w/ mic",
+            "Wireless Headphones",
+            149.99,
+            150
+        )
+    );
+
+    // Create users
+    RegularUser user1(
+        "Aaron",
+        "aaron@zmail.com",
+        "144 E Herzing Street"
+    );
+
+    PremiumUser user2(
+        "Steve",
+        "armyvet@zmail.com",
+        "456 Vets way apt 1147"
+    );
+
+    VIPUser user3(
+        "Sarah",
+        "queensbee@zmail.com",
+        "789 Pine Street"
+    );
+
+    // Display products
+    cout << "Available Products:" << endl;
+
+    inventory.displayProducts();
+
+    return 0;
+}
