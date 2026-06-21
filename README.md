@@ -1,7 +1,7 @@
 # Online-Shopping-system
 Online Shopping System Project
 # GAMETECHMARKET
-#### Video Demo: <URL here> 
+#### Video Demo: <https://www.youtube.com/watch?v=FhkTRT8sMDQ> 
 #### Description:
 GAMETECHMARKET is an C++ online shopping system that I created as a project for my college course. In this system there will be three tiers of users. Regular users which will be standard and automatically created when first time guest check out and make their first purchase. Premium users which will offer special discounts and exclusive drops. Then VIP users which will have bigger discounts and early access to product releases. 
 
